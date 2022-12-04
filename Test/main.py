@@ -1,3 +1,1 @@
-import string
-
-print(list(string.ascii_uppercase))
+print(2 in range(1, 7))
