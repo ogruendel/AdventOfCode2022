@@ -1,13 +1,11 @@
 package Test
 
 fun main() {
-    val list = mutableListOf<Char>('A', 'B', 'B', 'C')
-    var i = 0
-
-    for (char in list) {
-        i++
-        if (list.lastIndexOf(char) != list.indexOf(char)) {
-            println(i)
-        }
+    val test: MutableMap<String, Int> = mutableMapOf("a" to 123)
+    if (test["b"] == null) {
+        test["b"] = 0
     }
+    test["b"] = test.getValue("b") + 1
+    println(test.getValue("b"))
+
 }
