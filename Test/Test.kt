@@ -1,5 +1,7 @@
 package Test
 
 fun main() {
-    println(0 in 1..3)
+    val list: MutableList<Int> = mutableListOf()
+
+    println(list.max())
 }
